@@ -1,0 +1,94 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci.",
+      "url": "feedburner.com",
+      "timestamp": "2022-10-27T06:27:55Z",
+      "score": 628,
+      "owner": null,
+      "vote": null
+    },
+    {
+      "id": 2,
+      "title": "Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.",
+      "url": "amazon.de",
+      "timestamp": "2021-12-15T17:14:57Z",
+      "score": 32,
+      "owner": "ajeffcock1",
+      "vote": 67
+    },
+    {
+      "id": 3,
+      "title": "Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.",
+      "url": "newyorker.com",
+      "timestamp": "2022-08-01T00:33:06Z",
+      "score": 672,
+      "owner": null,
+      "vote": null
+    },
+    {
+      "id": 4,
+      "title": "Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.",
+      "url": "wiley.com",
+      "timestamp": "2022-07-31T05:58:59Z",
+      "score": 237,
+      "owner": null,
+      "vote": null
+    },
+    {
+      "id": 5,
+      "title": "Curabitur gravida nisi at nibh.",
+      "url": "bbb.org",
+      "timestamp": "2022-05-08T03:41:25Z",
+      "score": 341,
+      "owner": null,
+      "vote": null
+    },
+    {
+      "id": 6,
+      "title": "Integer ac leo.",
+      "url": "nydailynews.com",
+      "timestamp": "2022-09-16T16:12:14Z",
+      "score": 561,
+      "owner": "mbattell5",
+      "vote": 74
+    },
+    {
+      "id": 7,
+      "title": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+      "url": "usa.gov",
+      "timestamp": "2022-02-13T07:03:46Z",
+      "score": 110,
+      "owner": "kfenne6",
+      "vote": 23
+    },
+    {
+      "id": 8,
+      "title": "Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.",
+      "url": "about.com",
+      "timestamp": "2022-09-18T13:03:08Z",
+      "score": 75,
+      "owner": null,
+      "vote": null
+    },
+    {
+      "id": 9,
+      "title": "Etiam vel augue. Vestibulum rutrum rutrum neque.",
+      "url": "wix.com",
+      "timestamp": "2022-03-16T18:19:53Z",
+      "score": 51,
+      "owner": null,
+      "vote": null
+    },
+    {
+      "id": 10,
+      "title": "In hac habitasse platea dictumst.",
+      "url": "macromedia.com",
+      "timestamp": "2022-02-27T21:10:39Z",
+      "score": 248,
+      "owner": null,
+      "vote": null
+    }
+  ]
+}

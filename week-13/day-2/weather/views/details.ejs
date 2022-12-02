@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title><%=cityForecast[0].city%></title>
+    <link rel="stylesheet" href="../static/details.css" />
+  </head>
+  <body>
+    <body>
+        <div class="city"><%=cityForecast[0].city%></div>
+      <div class="container">
+        <% for(forecast of cityForecast[0].weather) {%>
+        <div class="card">
+          <img src="../static/<%= forecast.icon%>.png" alt="" />
+          <div class="cel"><%= forecast.temp%>°C</div>
+          <div class="msg"><%= forecast.message%></div>
+        </div>
+        <% } %>
+      </div>
+    </body>
+  </body>
+</html>

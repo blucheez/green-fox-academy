@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+.list-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.search-title {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+  display: block;
+  margin: 1rem;
+}
+
+form input {
+  width: 30rem;
+  height: 3rem;
+  margin: 1rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+form button {
+  height: 3rem;
+  width: 5rem;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.char-list ul li,
+.film-list ul li {
+  padding: 0.5rem 0;
+}
+
+.char-list ul li {
+  cursor: pointer;
+}
+.char-list ul li:focus {
+  background: red;
+}
+
+h3 {
+  text-decoration: underline;
+  margin-bottom: 1.5rem;
+}
+

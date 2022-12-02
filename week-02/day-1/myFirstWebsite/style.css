@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Consolas', san-serif;
+}
+
+body{
+  background-image: url('/assets/topography.webp');
+}
+
+section,
+.break,
+footer {
+  padding: 0 10%;
+}
+
+.title,
+h1,
+h2,
+h3,
+footer p {
+  font-family: 'Montserrat', sans-serif;
+}
+
+p {
+  font-family: 'Merriweather', serif;
+  line-height: 25px;
+}
+
+.title,
+a {
+  color: #ff0099;
+}
+
+header {
+  background-color: #333333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10%;
+  position: sticky;
+  top: 0;
+}
+
+nav li {
+  list-style: none;
+  display: inline-block;
+  padding: 0 20px;
+}
+
+nav li a,
+.content article a {
+  transition: all 0.3s ease 0s;
+}
+
+nav li a:hover {
+  color: #fff;
+}
+
+.content article a:hover {
+  color: blueviolet;
+}
+
+h1 {
+  font-size: 50px;
+  margin-top: 80px;
+}
+
+.title {
+  margin-top: 40px;
+  font-size: 25px;
+}
+
+.intro p {
+  margin-top: 20px;
+  line-height: 25px;
+}
+
+.break {
+  padding: 50px 0;
+  text-align: center;
+}
+
+#wiki {
+  text-align: center;
+  font-size: 35px;
+}
+
+.content article {
+  margin: 35px 0;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.content article h3 {
+  padding-bottom: 15px;
+  font-size: 25px;
+}
+.content article p {
+  padding-bottom: 10px;
+}
+
+.content article:nth-child(2n + 2) {
+  background-color: rgba(255, 40, 151, 0.1);
+}
+
+footer {
+  margin-top: 100px;
+  background-color: #333333;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}

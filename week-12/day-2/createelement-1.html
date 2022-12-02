@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Workshop: CreateElement</title>
+  </head>
+
+  <body>
+    <ul class="aszteroidák">
+      <li id="b325" class="aszteroida">The King</li>
+      <li class="aszteroida b326">The Conceited Man</li>
+    </ul>
+    <div class="container"></div>
+
+    <!--
+      Dolgozhatsz a html script tag-en belül, vagy külön js fájlban is,
+      utóbbi esetén ne felejtsd el beimportálni a js fájlt az alábbi módon:
+      <script src="createelement-1.js"></script>
+
+    <script>
+      Adj hozzá egy elemet az aszteroida listához 'The Green Fox' tartalommal!
+
+      Adj hozzá egy elemet az aszteroida listához 'The Lamplighter' tartalommal!
+
+      Adj hozzá egy címsort (heading) a .container-hez 'Tudok elemeket hozzáadni
+      a DOM-hoz!' tartalommal!
+
+      Adj hozzá egy képet (bármilyen képet) a konténerhez!
+    </script>
+    -->
+
+    <script>
+      const asteroidList = document.querySelector('ul.aszteroidák')
+
+      const newAsteroid = document.createElement('li')
+      newAsteroid.id = 'b444'
+      newAsteroid.textContent = 'The Green Fox'
+      asteroidList.appendChild(newAsteroid)
+
+      const newAsteroid2 = document.createElement('li')
+      newAsteroid2.id = 'b555'
+      newAsteroid2.textContent = 'The Lamplighter'
+      asteroidList.appendChild(newAsteroid2)
+
+      const div = document.querySelector('div.container')
+      const heading = document.createElement('h1')
+      heading.textContent = 'Tudok elemeket hozzáadni a DOM-hoz!'
+      div.appendChild(heading)
+
+      const img = document.createElement('img')
+      img.src =
+        'https://pbs.twimg.com/profile_images/610150821397987331/qZzryLFn_400x400.jpg'
+      div.appendChild(img)
+    </script>
+  </body>
+</html>

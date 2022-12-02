@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Workshop: innerHTML, textContent</title>
+  </head>
+
+  <body>
+    <p class="apple">apple</p>
+    <p class="balloon">banana</p>
+    <p class="cat">car</p>
+    <p class="animals">goat rabbit <strong>cat</strong> dog</p>
+
+    <!--
+      Dolgozhatsz a HTML script tag-en belül, vagy külön js fájlban is,
+      utóbbi esetén ne felejtsd el beimportálni a js fájlt az alábbi módon:
+      <script src="content-1.js"></script>
+
+    <script>
+    1) Fűzd hozzá minden p tag-hez az előző tartalmát.
+
+    2) Ezt ismételd meg, de a cat maradjon kiemelve (strong)
+    </script>
+   -->
+    <script>
+      const p = document.querySelectorAll('p')
+
+      /* for (let i = 0; i < p.length; i++) {
+        if (i >= 1) {
+          p[i].textContent += ' ' + p[i - 1].textContent
+        }
+      } */
+
+      for (let i = 0; i < p.length; i++) {
+        if (i >= 1) {
+          p[i].innerHTML += ' ' + p[i - 1].innerHTML
+        }
+      }
+    </script>
+  </body>
+</html>

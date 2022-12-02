@@ -1,0 +1,94 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  background-color: lightgray;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 625px;
+  height: 375px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+form input {
+  display: block;
+  margin: 20px 0;
+  border: 0;
+  outline: 0;
+  border-bottom: 1px solid lightgray;
+  width: 200px;
+  font-size: 16px;
+}
+
+form input:focus {
+  border-bottom: 2px solid #099f86;
+}
+
+.sub-btn {
+  border: 0;
+  outline: 0;
+  background-color: #099f86;
+  margin-top: 50px;
+  width: 120px;
+  color: white;
+  font-weight: bold;
+  height: 40px;
+  border-radius: 5px;
+}
+
+.social-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.or {
+  margin: 20px;
+  background-color: lightgrey;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  font-weight: 100;
+  font-size: 30px;
+}
+
+.social {
+  height: 40px;
+  margin: 10px 0;
+  border: 0;
+  color: white;
+  width: 250px;
+  border-radius: 3px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.social.fb {
+  background-color: #29538c;
+}
+.social.tw {
+  background-color: #46afec;
+}
+.social.gg {
+  background-color: #e04c3a;
+}

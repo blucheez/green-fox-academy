@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Button disable</title>
+  </head>
+  <body>
+    <!-- # Gomb letiltása
+
+## Űrlap elemek
+
+- Hozz létre egy ilyen kérdést: `Mi a kedvenc állatod?`
+- Legyen 3 rádiógombod:
+  - Kutya
+  - Cica
+  - Viktor, az aranyhal
+- Legyen két rádiógombod a következő kérdés megválaszolására:
+  `Szeretnél feliratkozni a macskákkal kapcsolatos hírlevélre?`
+  - Igen
+  - Nem
+- Hozz létre kettő gombot, *mindkettő legyen alapesetben letiltva*
+  - Szeretem a macskákat
+  - Feliratkozás
+
+## Feladat
+
+- A rádiógombok legyenek csoportosítva, hogy csak egyet lehessen választani
+- Ha kiválasztod a Kutyát vagy Cicát, a **Feliratkozás** gomb legyen elérhető
+- Ha igennel válaszolsz a macskás hírlevélre, akkor legyen elérhető a
+  **Szeretem a macskákat** gomb
+- Egy gombra kattintva jelenjen meg a következő figyelmeztetés:
+  - `Köszönjük, sikeresen feliratkoztál a macskákkal kapcsolatos hírlevelünkre`
+- Ha Viktort választod és nemmel válaszolsz a macskás feliratkozásra, akkor
+  csak a feliratkozás gomb legyen elérhető
+- Ezesetben kattintás után jelenjen meg a következő:
+  `Upsz, mégis felvettünk a macskákkal kapcsolatos hírlevelünkre` -->
+    <form>
+      <fieldset>
+        <legend>Mi a kedvenc állatod?</legend>
+        <input type="radio" id="kutya" name="animal" value="kutya" />
+        <label for="kutya">Kutya</label>
+        <input type="radio" id="cica" name="animal" value="cica" />
+        <label for="cica">Cica</label>
+        <input type="radio" id="aranyhal" name="animal" value="aranyhal" />
+        <label for="aranyhal">Viktor, az aranyhal</label>
+      </fieldset>
+      <fieldset>
+        <legend>
+          Szeretnél feliratkozni a macskákkal kapcsolatos hírlevélre?
+        </legend>
+        <input type="radio" id="yes" name="newsletter" value="yes" />
+        <label for="yes">Igen</label>
+        <input type="radio" id="no" name="newsletter" value="no" />
+        <label for="no">Nem</label>
+      </fieldset>
+      <div>
+        <button class="lovecats" disabled>Szeretem a macskákat</button>
+      </div>
+      <div>
+        <button class="sub" disabled>Feliratkozás</button>
+      </div>
+    </form>
+
+    <script src="main.js"></script>
+  </body>
+</html>

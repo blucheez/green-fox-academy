@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Green Fox Notebook Error Reporter</title>
+  </head>
+  <body>
+    <nav>
+      <span>Home</span>
+      <span><a href="./tickets.html">Tickets</a></span>
+    </nav>
+
+    <h1>Create new ticket</h1>
+    <form
+      style="display: flex; flex-direction: column; width: 300px"
+      action="http://localhost:8080/tickets"
+      method="POST"
+    >
+      <label for="name">Name:</label>
+      <select name="reporter_id" id="name"></select>
+      <label for="manufacturer">Manufacturer:</label>
+      <input type="text" name="manufacturer" id="manufacturer" />
+      <label for="serial_number">Serial number:</label>
+      <input type="number" name="serial_number" id="serial_number" />
+      <label for="description">Description:</label>
+      <textarea name="description" id="description" cols="20" rows="5"></textarea>
+      <input type="submit" value="Report" />
+    </form>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

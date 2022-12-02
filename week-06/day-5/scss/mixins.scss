@@ -1,0 +1,17 @@
+@mixin mix {
+  background-color: #acac27;
+  font-size: 50px;
+  margin: 35px;
+}
+body {
+  @include mix;
+  main {
+    @include mix;
+    section {
+      @include mix;
+    }
+    div {
+      @include mix;
+    }
+  }
+}

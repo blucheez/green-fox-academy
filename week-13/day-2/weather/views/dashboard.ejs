@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Forecasts</title>
+    <link rel="stylesheet" href="../static/dashboard.css" />
+  </head>
+  <body>
+    <div class="container">
+      <% for(forecast of forecasts) {%>
+      <a href="http://localhost:3000/cities/<%= forecast.city %>">
+        <div class="card">
+          <div class="city">
+            <div class="city-name"><%= forecast.city%></div>
+            <div class="location"><%= forecast.location%></div>
+          </div>
+          <div class="temp">
+            <div class="cel"><%= forecast.weather[0].temp%>°C</div>
+            <img src="../static/<%= forecast.weather[0].icon%>.png" alt="" />
+          </div>
+        </div>
+      </a>
+      <% } %>
+    </div>
+  </body>
+</html>

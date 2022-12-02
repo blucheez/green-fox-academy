@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+  margin: 1.5rem;
+  font-size: 2.5rem;
+}
+
+.alcohols {
+  display: flex;
+  list-style-type: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.25rem;
+  justify-content: space-between;
+  width: 20rem;
+  margin-bottom: 1.5rem;
+  margin-left: 1.5rem;
+}
+
+.table {
+  margin-left: 1.5rem;
+  display: flex;
+}
+
+.table-name-title,
+.table-price-title {
+  background-color: black;
+  color: white;
+  height: 3rem;
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.table-name li,
+.table-price li {
+  height: 4rem;
+  list-style-type: none;
+}
+
+.table-price li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.table-name li:nth-child(2n),
+.table-price li:nth-child(2n) {
+ 
+  list-style-type: none;
+  background-color: lightgray;
+}
+
+.table-price {
+  margin-left: 0.15rem;
+  width: 10rem;
+  font-weight: bold;
+}
+
+.table-name p:first-child {
+  font-weight: bold;
+  margin-bottom: 0.2rem
+}
+
+.table-name li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 1.25rem
+}
+
+.non-alcoholic{
+    font-weight: normal;
+}

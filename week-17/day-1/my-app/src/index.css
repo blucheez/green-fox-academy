@@ -1,0 +1,45 @@
+.content {
+  display: flex;
+}
+
+.filters-container {
+  margin-top: 4.25rem;
+}
+.filters,
+.hotels {
+  border: 1px solid black;
+  width: 15rem;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.filters p {
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+
+.hotels-container {
+  margin-left: 1rem;
+}
+
+.hotels {
+  width: 36rem;
+}
+
+.hotels img {
+  width: 10rem;
+}
+
+.desc {
+  display: flex;
+}
+
+.desc p {
+  margin-left: 0.5rem;
+}
+
+.desc button {
+  margin-top: 1rem;
+  display: block;
+}

@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+* {
+  font-family: 'Lato', sans-serif;
+}
+
+header h1 {
+  letter-spacing: 4rem;
+}
+
+header img {
+  filter: brightness(40%);
+}
+
+.new-post {
+  letter-spacing: 0.15rem;
+}

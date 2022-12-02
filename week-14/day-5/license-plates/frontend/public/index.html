@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>License Plates</title>
+  </head>
+  <body>
+    <form method="get">
+      <label for="q">License plate (ex.: HMZ-140)</label>
+      <input type="text" name="q" id="q" maxlength="7" required/>
+      <input type="submit" value="Query database" />
+      <div style="margin-top: 20px; width: 300px">
+        <fieldset>
+          <legend>Filter</legend>
+          <input type="radio" name="filter" id="police" value="police" />
+          <label for="police">Police</label>
+          <input type="radio" name="filter" id="diplomat" value="diplomat" />
+          <label for="diplomat">Diplomat</label>
+        </fieldset>
+      </div>
+    </form>
+    <section>
+      <h2>Search results</h2>
+      <table id="search-results">
+        <thead>
+          <tr>
+            <th>License plate</th>
+            <th>Brand</th>
+            <th>Model</th>
+            <th>Color</th>
+            <th>Year</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+  </body>
+
+  <script src="./app.js"></script>
+</html>

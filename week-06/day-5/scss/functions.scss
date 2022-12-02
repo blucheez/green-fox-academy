@@ -1,0 +1,12 @@
+@function color-setter($bool: true) {
+  @if $bool {
+    @return #fff;
+  } @else {
+    @return #000;
+  }
+}
+
+body {
+  background-color: color-setter(true);
+  color: color-setter(false);
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit questions</title>
+    <link rel="stylesheet" href="./questions.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div></div>
+      <h2>Kérdések szerkesztése</h2>
+      <div class="q-container">
+        <div class="q-list"></div>
+      </div>
+
+      <h2 class="add">Új kérdés létrehozása</h2>
+      <div class="add-container">
+        <form action="http://localhost:3000/api/questions" method="post">
+          <input
+            type="text"
+            name="question"
+            id="q-input"
+            placeholder="Add meg a kérdést"
+            required
+          />
+          <h3>Válaszok</h3>
+          <div>
+            <label for="1">#1</label>
+            <input
+              type="text"
+              name="q1"
+              id="1"
+              placeholder="Add meg a választ"
+              required
+            />
+            <input type="radio" name="is_correct" id="" value="q1" />
+          </div>
+          <div>
+            <label for="2">#2</label>
+            <input
+              type="text"
+              name="q2"
+              id="2"
+              placeholder="Add meg a választ"
+              required
+            />
+            <input type="radio" name="is_correct" id="" value="q2" />
+          </div>
+          <div>
+            <label for="3">#3</label>
+            <input
+              type="text"
+              name="q3"
+              id="3"
+              placeholder="Add meg a választ"
+              required
+            />
+            <input type="radio" name="is_correct" id="" value="q3" />
+          </div>
+          <div>
+            <label for="4">#4</label>
+            <input
+              type="text"
+              name="q4"
+              id="4"
+              placeholder="Add meg a választ"
+              required
+            />
+            <input type="radio" name="is_correct" id="" value="q4" required />
+          </div>
+          <button type="submit">KÜLDÉS</button>
+        </form>
+      </div>
+      <a class="nav-link" href="./index.html">Vissza a játékhoz</a>
+    </div>
+    <script src="./questions.js"></script>
+  </body>
+</html>

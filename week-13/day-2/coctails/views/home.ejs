@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Todos</title>
+    <link rel="stylesheet" href="../static/style.css" />
+  </head>
+  <body>
+    <h1>Coctails</h1>
+    <ul class="alcohols">
+      <li>all</li>
+      <% for (elem of alcoholList) { %>
+      <li><%=elem%></li>
+      <% } %>
+    </ul>
+    <div class="table">
+      <ul class="table-name">
+        <li class="table-name-title">Name</li>
+        <% for (coctail of coctailList) { %>
+        <li>
+          <p class="drink-name">
+            <%=coctail.name%> <% if(!coctail.isAlcoholic){%>
+            <span class="non-alcoholic">(non-alcoholic)</span>
+            <%} %>
+          </p>
+
+          <p class="drink-contains">
+            <%=coctail.contains.join(', ')%>
+          </p>
+        </li>
+        <% } %>
+      </ul>
+      <ul class="table-price">
+        <li class="table-price-title">Price</li>
+        <% for (coctail of coctailList) { %>
+        <li><%=coctail.price%> Ft</li>
+        <% } %>
+      </ul>
+    </div>
+  </body>
+</html>
